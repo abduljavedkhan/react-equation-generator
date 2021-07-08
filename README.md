@@ -1,5 +1,7 @@
 # react-equation-generator
 
+### Live URL: https://react-equation-generator.herokuapp.com/
+
 ## Requirements 
 
 #: <b>build a processor to take the numbers and calculate all the equation to the target number from them.</b>
@@ -38,13 +40,23 @@ steps:
 
 screenshot:1
 
-![image](https://user-images.githubusercontent.com/44355278/124404561-150e0400-dd59-11eb-81db-993f51a4a73a.png)
+![image](https://user-images.githubusercontent.com/44355278/124954180-74a73080-e033-11eb-8470-537057a7953f.png)
 
-# Response
 screenshot:2 
 
-![image](https://user-images.githubusercontent.com/44355278/124404505-d8daa380-dd58-11eb-8950-01932585ca1b.png)
+Target Number is mandatory.
 
-screenshot:3
+![image](https://user-images.githubusercontent.com/44355278/124954408-a6b89280-e033-11eb-8941-65de1f8eafb6.png)
 
-![image](https://user-images.githubusercontent.com/44355278/124946847-fba4da80-e02c-11eb-8670-2cac443fd5fb.png)
+# Response
+screenshot:1 
+
+Upload csv file and wait for file to process. 
+
+![image](https://user-images.githubusercontent.com/44355278/124954570-da93b800-e033-11eb-9416-19073ea6508c.png)
+
+screenshot:2 
+
+Get all generated equations in response.
+
+![image](https://user-images.githubusercontent.com/44355278/124954696-fb5c0d80-e033-11eb-95ec-65cf65b04c94.png)
