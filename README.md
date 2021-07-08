@@ -34,8 +34,7 @@ Following stack has been used in the project
 # Request
 steps:
 1. Enter Target number in Field ex. 532
-2. Upload sample.csv file (attached in this repo having data as 3, 4, 8, 7, 12)
-
+2. Upload sample.csv file (attached with this repo having data as 3, 4, 8, 7, 12) by clicking on "Browse_file". 
 
 screenshot:1
 
