@@ -31,11 +31,21 @@ Following stack has been used in the project
 - [React Papa Parse](https://react-papaparse.js.org/)
 
 ### Output
+# Request
+steps:
+1. Enter Target number in Field ex. 532
+2. Upload sample.csv file (attached in this repo having data as 3, 4, 8, 7, 12)
+
 
 screenshot:1
 
 ![image](https://user-images.githubusercontent.com/44355278/124404561-150e0400-dd59-11eb-81db-993f51a4a73a.png)
 
-screenshot:2 (RESPONSE)
+# Response
+screenshot:2 
 
 ![image](https://user-images.githubusercontent.com/44355278/124404505-d8daa380-dd58-11eb-8950-01932585ca1b.png)
+
+screenshot:3
+
+![image](https://user-images.githubusercontent.com/44355278/124946847-fba4da80-e02c-11eb-8670-2cac443fd5fb.png)
