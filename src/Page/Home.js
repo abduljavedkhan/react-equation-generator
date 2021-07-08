@@ -4,26 +4,32 @@ import { execute, solve, output } from "../Service/expression-util";
 import TextInput from "../components/TextInput";
 import Button from "../components/Button";
 import Header from "../components/Header";
+
 const buttonRef = React.createRef();
+
 const Home = (props) => {
   const [resData, setresData] = useState([]);
   const [targetNumber, setTargetNumber] = useState("");
+
   const handleOpenDialog = (e) => {
-    if (buttonRef.current) {
-      buttonRef.current.open(e);
+    if (targetNumber.length !== 0) {
+      if (buttonRef.current) {
+        buttonRef.current.open(e);
+      }
+    } else {
+      alert(`First, Enter Target number.`);
     }
   };
 
   const handleOnFileLoad = (data) => {
     let inputArray = data[0]["data"].toString().split(",").map(Number);
-    console.log(inputArray);
-    console.log("tar ", targetNumber);
     const results = execute(solve, [inputArray, parseInt(targetNumber)]);
     setresData(results);
   };
 
   const handleOnError = (err, file, inputElem, reason) => {
     console.log(err);
+    alert(`File Upload Error ${err}`);
   };
 
   return (
@@ -78,7 +84,7 @@ const Home = (props) => {
           </aside>
         )}
       </CSVReader>
-      <div>{`List of Equations:`}</div>
+     {output.length === 0 ? <div>{`- List of Equations will appear here -`}</div> : <div>{`List of Equations:`}</div>} 
       <div className="overflow-x-scroll">
         {output &&
           output.map((res, index) => (
